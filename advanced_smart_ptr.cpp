@@ -63,7 +63,7 @@ struct SharedPtr
     ~SharedPtr() { dec_counter();	}
     
     Expression& operator*()  const      {  return *ptr_;  }
-	Expression* operator->() const      {  return  ptr_;  }
+    Expression* operator->() const      {  return  ptr_;  }
     Expression* get()        const      {  return  ptr_;  }
     
     private:
