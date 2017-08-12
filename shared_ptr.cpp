@@ -17,7 +17,6 @@ struct SharedPtr
     
     explicit SharedPtr(Expression *ptr = 0) {
         this->ptr_ = ptr;
-        //this->counter = new int(1) ? ptr_ : this->counter = 0;
         if (this->ptr_)
             this->counter = new int(1);
         else
